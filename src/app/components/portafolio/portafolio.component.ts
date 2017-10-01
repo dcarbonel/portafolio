@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import {ProductosService} from '../../services/productos.service';
 
 @Component({
@@ -6,11 +6,9 @@ import {ProductosService} from '../../services/productos.service';
   templateUrl: './portafolio.component.html',
   styles: []
 })
-export class PortafolioComponent implements OnInit {
+export class PortafolioComponent {
 
-  constructor(public _ps:ProductosService) { }
+  constructor(private _ps:ProductosService) { }
 
-  ngOnInit() {
-  }
 
 }
