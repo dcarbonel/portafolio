@@ -9,7 +9,10 @@ export class ProductosService {
     this.cargar_productos();
   }
 
+  public cargar_producto(cod:string){
 
+    return this.http.get(`https://paginaweb-d784a.firebaseio.com/productos/${ cod }.json`);
+  }
   public cargar_productos() {
     this.cargando = true;
     if (this.productos.length === 0) {
