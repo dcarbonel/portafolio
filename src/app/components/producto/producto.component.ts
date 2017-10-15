@@ -21,7 +21,7 @@ export class ProductoComponent implements OnInit {
             .subscribe(res=>{
               this.codigo=parametros['id'];
               this.producto=res.json();
-              console.log(this.producto);
+              // console.log(this.producto);
             });
         }
       );

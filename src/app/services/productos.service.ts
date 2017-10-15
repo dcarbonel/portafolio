@@ -29,7 +29,7 @@ export class ProductosService {
       if(prod.categoria.toLowerCase().indexOf(termino)>=0
        ||prod.titulo.toLowerCase().indexOf(termino)>=0){
         this.productosFiltrado.push(prod);
-        console.log(prod);
+        // console.log(prod);
       }
 
     });
