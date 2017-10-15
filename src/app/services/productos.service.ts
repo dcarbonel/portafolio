@@ -5,7 +5,7 @@ export class ProductosService {
 
   productos: any[] = [];
   productosFiltrado: any[] = [];
-  cargando: boolean = true;
+  public cargando: boolean = true;
   constructor(public http: Http) {
     this.cargar_productos();
   }

@@ -13,7 +13,7 @@ export class SearchComponent implements OnInit {
     termino:string;
 
   constructor(private route :ActivatedRoute,
-              private _ps : ProductosService) {
+              public _ps : ProductosService) {
     route.params.subscribe(
       parametros =>{
 
